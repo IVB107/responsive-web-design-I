@@ -1,3 +1,395 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 75%;
+	padding: 0 5%;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	margin: 0;
+}
+
+nav a {
+	display: flex;
+	justify-content: space-evenlu;
+	width: 100%;
+	text-decoration: none;
+	color: #b1b1b1;
+	align-self: flex-start;
+	margin: 0;
+	padding: 0;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 25%;
+}
+
+.logo-container a img {
+	width: 100%;
+}
+
+.logo-container a {
+	width: 80%;
+}
+
+/* Title Section */
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 40px 0px;
+	margin-bottom: 40px;
+}
+
+.title-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.title-text p {
+	font-size: 80px;
+	font-family: "Bangers", cursive;
+}
+
+.title-text button {
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	font-size: 14px;
+	padding: 5px 40px;
+	margin-top: 20px;
+}
+
+.title-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.initech {
+	width: 100%;
+	height: 550px;
+	background-image: url("https://i.imgflip.com/1s7y17.jpg");
+	background-position: center center;
+}
+
+.services-container .title-img, .services-container .title-img img {
+	width: 100%;
+}
+
+.line-break {
+	width: 100%;
+	border-top: 1px solid black;
+	margin: 0 0 40px;
+}
+
+/* Main Content */
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.upper-content, .lower-content, .img-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.text-box {
+	margin-right: 1%;
+}
+
+.sub-header {
+	font-size: 20px;
+	font-family: "Bangers", cursive;
+	margin-bottom: 20px;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.about-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.row-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.box-outer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 30px;
+	min-width: 200px;
+	border: 2px solid black;
+	width: 24%;
+	padding: 20px 10px 0;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	/* border: 2px solid cyan; */
+}
+
+.box img {
+	width: 100%;
+	border: 1px solid black;
+	align-self: center;
+}
+
+.box-title, .box-text, .box button, .box img {
+	margin-bottom: 20px;
+}
+
+.box button {
+	align-self: center;
+	width: 80%;
+	padding: 6px 0;
+	border: 1px solid black;
+	background-color: #FFF;
+}
+
+.services-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0 0 20px;
+	margin-bottom: 20px;
+}
+
+.page-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 28px;
+	font-family: "Bangers", cursive;
+	margin: 20px 0;
+}
+
+.service-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 0 40px;
+}
+
+.service-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 48%;
+	border: 1px solid black;
+	padding: 20px;
+	background-color: #f1f1f1
+}
+
+.service-box p {
+	margin-bottom: 20px;
+}
+
+.service-box button {
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #FFF;
+	padding: 8px 40px;
+}
+
+h3 {
+	font-size: 16px;
+	font-family: "Bangers", cursive;
+	margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.service-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.service-footer div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 48%;
+}
+
+.service-footer div p {
+	margin-bottom: 30px;
+}
+
+.footer-list ul {
+	width: 100%;
+	box-sizing: content-box;
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+.footer-list li {
+	margin-bottom: 20px;
+}
+
+.services-info-img {
+	width: 100%;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.address, .phone, .email {
+	margin-bottom: 15px;
+}
+
+.email {
+	text-decoration: none;
+	color: black;
+}
+
+.copyright {
+	align-self: center;
+	margin-bottom: 100px;
+}
+
+.service-copyright {
+	align-self: center;
+	margin: 100px 0 20px;
+}
 
