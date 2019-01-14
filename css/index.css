@@ -71,8 +71,8 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: 75%;
-	padding: 0 5%;
+	width: 100%;
+	padding: 0 70px;
 }
 
 /* Header */
@@ -108,7 +108,8 @@ nav a {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	width: 25%;
+    width: 25%;
+    margin-bottom: 5px;
 }
 
 .logo-container a img {
@@ -116,7 +117,7 @@ nav a {
 }
 
 .logo-container a {
-	width: 80%;
+	width: 84%;
 }
 
 /* Title Section */
@@ -126,7 +127,7 @@ nav a {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	padding: 40px 0px;
+	padding: 45px 0px 36px 71px;
 	margin-bottom: 40px;
 }
 
@@ -139,16 +140,18 @@ nav a {
 }
 
 .title-text p {
-	font-size: 80px;
-	font-family: "Bangers", cursive;
+	font-size: 72px;
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
 }
 
 .title-text button {
 	background-color: #FFFFFF;
 	border: 1px solid black;
 	font-size: 14px;
-	padding: 5px 40px;
-	margin-top: 20px;
+	padding: 6px 40px;
+    margin-top: 26px;
+    letter-spacing: 1px;
 }
 
 .title-img {
@@ -171,7 +174,7 @@ nav a {
 .line-break {
 	width: 100%;
 	border-top: 1px solid black;
-	margin: 0 0 40px;
+	margin: 0 0 35px;
 }
 
 /* Main Content */
@@ -189,7 +192,10 @@ main {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 40px;
+	margin-bottom: 36px;
+}
+.lower-content, .img-container {
+    margin-bottom: 33px;
 }
 
 .text-box {
@@ -197,13 +203,13 @@ main {
 }
 
 .sub-header {
-	font-size: 20px;
+	font-size: 16px;
 	font-family: "Bangers", cursive;
 	margin-bottom: 20px;
 }
 
 .middle-img {
-	width: 100%;
+	width: 99%;
 }
 
 .about-main {
@@ -371,7 +377,7 @@ footer {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-bottom: 30px;
+	margin: 8px 0px 22px;
 }
 
 .address, .phone, .email {
