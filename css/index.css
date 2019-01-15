@@ -378,6 +378,14 @@ footer {
 	align-items: flex-start;
 	margin: 8px 0px 22px;
 }
+@media (max-width: 800px) {
+    .contact {
+        margin: 0 10px 25px;
+    }
+    .contact .sub-header {
+        margin: 0px 0px 14px;
+    }
+}
 
 .address, .phone, .email {
 	margin-bottom: 15px;
