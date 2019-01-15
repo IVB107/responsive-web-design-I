@@ -275,6 +275,12 @@ main {
         margin-bottom: 6px;
     }
 }
+@media (max-width: 500px) {
+    .upper-content, .lower-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
 
 .text-box {
 	margin-right: 1%;
@@ -288,6 +294,11 @@ main {
     }
     .lower-content .text-box p {
         margin: 0 20px 0 0;
+    }
+}
+@media (max-width: 500px) {
+    .text-box {
+        margin: 22px 0;
     }
 }
 
