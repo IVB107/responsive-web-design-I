@@ -1,3 +1,403 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0 70px;
+}
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	width: 100%;
+	margin-top: 10px;
+}
+@media (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        height: 92px;
+    }
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	margin: 0;
+}
+@media (max-width: 800px) {
+    nav {
+        width: 100%;
+    }   
+}
+
+nav a {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	text-decoration: none;
+	color: #b1b1b1;
+	align-self: flex-start;
+	margin: 0;
+	padding: 0;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+    width: 25%;
+    margin-bottom: 5px;
+}
+@media (max-width: 800px) {
+    .logo-container{
+        width: 185px;
+    }
+}
+
+.logo-container a img {
+	width: 100%;
+}
+
+.logo-container a {
+	width: 84%;
+}
+@media (max-width: 800px) {
+    .logo-container a {
+        width: 100%;
+    }
+}
+
+/* Title Section */
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 45px 0px 36px 71px;
+	margin-bottom: 40px;
+}
+@media (max-width: 800px) {
+   .title {
+    justify-content: center;
+    padding: 0;
+    margin-top: 72px;
+   } 
+}
+
+.title-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.title-text p {
+	font-size: 72px;
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
+}
+
+.title-text button {
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	font-size: 14px;
+	padding: 6px 40px;
+    margin-top: 26px;
+    letter-spacing: 1px;
+}
+
+.title-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title-img, .title-img img {
+	width: 100%;
+}
+@media (max-width: 800px) {
+    .title-img, .title-img img {
+        display: none;
+    }
+}
+
+.line-break {
+	width: 100%;
+	border-top: 1px solid black;
+	margin: 0 0 35px;
+}
+@media (max-width: 800px) {
+    .line-break {
+        margin: 35px 0;
+    }
+}
+
+/* Main Content */
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.upper-content, .lower-content, .img-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.lower-content, .img-container {
+    margin-bottom: 33px;
+}
+@media (max-width: 800px) {
+    .upper-content {
+        margin-bottom: 33px;
+    }
+    .img-container {
+        margin-bottom: 30px;
+    }
+    .lower-content {
+        margin-bottom: 6px;
+    }
+}
+
+.text-box {
+	margin-right: 1%;
+}
+@media (max-width: 800px) {
+    .text-box {
+        margin: 0 10px;
+    }
+    .text-box p {
+        line-height: 17px;
+    }
+    .lower-content .text-box p {
+        margin: 0 20px 0 0;
+    }
+}
+
+.sub-header {
+	font-size: 16px;
+	font-family: "Bangers", cursive;
+	margin-bottom: 20px;
+}
+
+.middle-img {
+	width: 99%;
+}
+@media(max-width: 800px) {
+    .middle-img {
+        width: 100%;
+    }
+}
+
+.about-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.row-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.box-outer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 30px;
+	min-width: 200px;
+	border: 2px solid black;
+	width: 24%;
+	padding: 20px 10px 0;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	/* border: 2px solid cyan; */
+}
+
+.box img {
+	width: 100%;
+	border: 1px solid black;
+	align-self: center;
+}
+
+.box-title, .box-text, .box button, .box img {
+	margin-bottom: 20px;
+}
+
+.box button {
+	align-self: center;
+	width: 80%;
+	padding: 6px 0;
+	border: 1px solid black;
+	background-color: #FFF;
+}
+
+.page-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 28px;
+	font-family: "Bangers", cursive;
+	margin: 20px 0;
+}
+
+h3 {
+	font-size: 16px;
+	font-family: "Bangers", cursive;
+	margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.footer-list ul {
+	width: 100%;
+	box-sizing: content-box;
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+.footer-list li {
+	margin-bottom: 20px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 8px 0px 22px;
+}
+@media (max-width: 800px) {
+    .contact {
+        margin: 0 10px 25px;
+    }
+    .contact .sub-header {
+        margin: 0px 0px 14px;
+    }
+}
+
+.address, .phone, .email {
+	margin-bottom: 15px;
+}
+
+.email {
+	text-decoration: none;
+	color: black;
+}
+
+.copyright {
+	align-self: center;
+	margin-bottom: 100px;
+}
 
